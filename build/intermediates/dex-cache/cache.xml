@@ -2,20 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Damien\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-40bddcc5265e06c8fda8140f7954a8a7b8f8c72c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Damien\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0-15e9d5657eaa8e46fc024c37f7ac3ec48b3278ae.jar" />
-    </item>
-    <item
         jar="C:\Users\Damien\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,25 +9,11 @@
         <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\gson-2.3.1-d984ae79a24f3d72bd07825d63cec6dd5fcb4572.jar" />
     </item>
     <item
-        jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.pkmmte.view\circularimageview\1.1\jars\classes.jar"
+        jar="C:\Users\Damien\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
-        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\classes-cf122f23a934deaa4e6fec748381e124ef8a92f7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-5d134f11a237f79418003a1f36e06b742932fb98.jar" />
-    </item>
-    <item
-        jar="C:\Users\Damien\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-776ce7eb00c122edf93a0290df95464e0a5fbeb4.jar" />
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-40bddcc5265e06c8fda8140f7954a8a7b8f8c72c.jar" />
     </item>
     <item
         jar="C:\Users\Damien\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
@@ -51,11 +23,18 @@
         <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0-adc89ca206c815768d91a6be7c6c4b147db95489.jar" />
     </item>
     <item
-        jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jar="C:\Users\Damien\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\classes-9ddc04628e9d2336e22c82c64f0f75c4a289a971.jar" />
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-776ce7eb00c122edf93a0290df95464e0a5fbeb4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Damien\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0-15e9d5657eaa8e46fc024c37f7ac3ec48b3278ae.jar" />
     </item>
     <item
         jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
@@ -63,6 +42,27 @@
         revision="21.1.2"
         sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
         <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\classes-3173e7705709e3a6284c9ac7120d790439269604.jar" />
+    </item>
+    <item
+        jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.makeramen\roundedimageview\2.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2e76a4b693db19fdde80d30123204d0ed2454ea9">
+        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\classes-2d3c083f570f1c391b8e49cc5182436110b53052.jar" />
+    </item>
+    <item
+        jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\classes-9ddc04628e9d2336e22c82c64f0f75c4a289a971.jar" />
+    </item>
+    <item
+        jar="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Damien\AndroidStudioProjects\WineAssistant\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-5d134f11a237f79418003a1f36e06b742932fb98.jar" />
     </item>
 
 </items>

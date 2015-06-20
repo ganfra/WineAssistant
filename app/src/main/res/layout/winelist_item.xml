@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/wine_picture"
+        app:riv_corner_radius="12dip"
+        app:riv_border_width="1dip"
+        app:riv_border_color="#FFFFFF"
+        app:riv_oval="false" />
 
     <TextView
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wine_picture"
         android:textSize="18dp"
         android:maxLength="25"
         android:ellipsize="end"
         android:lines="1"
         android:layout_above="@+id/anchor"
         android:id="@+id/wine_name"
-        android:layout_alignLeft="@+id/anchor"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/wine_picture"
+        android:layout_toEndOf="@+id/wine_picture"
+        android:layout_marginEnd="5dp"
+        tools:text="Cabernet d'Anjou"/>
 
-    <CircularImageView
-        android:layout_height="70dp"
-        android:layout_width="70dp"
-        android:layout_marginLeft="25dp"
+    <View
+        android:id="@+id/anchor"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
         android:layout_centerVertical="true"
-        android:id="@+id/wine_picture" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,14 +52,12 @@
         android:lines="1"
         android:layout_below="@+id/anchor"
         android:id="@+id/wine_location"
-        android:layout_alignLeft="@+id/anchor"/>
-
-    <View
-        android:id="@+id/anchor"
-        android:layout_height="0dp"
-        android:layout_width="fill_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_alignTop="@+id/wine_picture"
-        android:layout_toRightOf="@+id/wine_picture" />
+        android:layout_alignBottom="@+id/wine_picture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/wine_picture"
+        android:layout_toEndOf="@+id/wine_picture"
+        android:layout_marginEnd="5dp"
+        tools:text="Région d'Anjou" />
 
 </RelativeLayout>

@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.damien.wineassistant.data.List;
-import com.pkmmte.view.CircularImageView;
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.squareup.picasso.Picasso;
 
 import butterknife.ButterKnife;
@@ -21,7 +21,6 @@ import butterknife.InjectView;
 public class WineAdapter extends BaseAdapter{
 
     private Context ctx;
-    private ViewHolder viewHolder;
     private java.util.List<List> wineList;
 
     public WineAdapter (Context ctx, java.util.List<List> wineList) {
@@ -54,33 +53,24 @@ public class WineAdapter extends BaseAdapter{
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int position, View view, ViewGroup viewGroup) {
+        ViewHolder viewHolder;
         if (view != null) {
-            view.getTag();
+            viewHolder = (ViewHolder) view.getTag();
         } else {
             LayoutInflater inflater = LayoutInflater.from(ctx);
             view = inflater.inflate(R.layout.winelist_item, viewGroup, false);
             viewHolder = new ViewHolder(view);
             view.setTag(viewHolder);
         }
-        List item = getItem(i);
-        viewHolder.wineName.setText(item.getName());
-        viewHolder.wineLocation.setText(item.getAppellation().getRegion().getName());
+        List item = getItem(position);
+        ViewHolder.bind(ctx, item, viewHolder);
 
-        String urlLabel = "";
-        if (!item.getLabels().isEmpty()) {
-            urlLabel = item.getLabels().get(0).getUrl();
-        }
-        Picasso.with(ctx).load(urlLabel)
-                .transform(new RoundTransform())
-                .error(R.drawable.ic_drawer)
-                .into(viewHolder.winePicture);
-
-        Log.e(WineAdapter.class.getSimpleName(),
-                "Entry " + i + ": "
+        Log.d(WineAdapter.class.getSimpleName(),
+                "Entry " + position + ": "
                         + item.getName()
                         + ", " + item.getAppellation().getRegion().getName()
-                        + ", "+item.getLabels().get(0).getUrl());
+                        + ", " + item.getLabels().get(0).getUrl());
         return view;
     }
 
@@ -88,10 +78,23 @@ public class WineAdapter extends BaseAdapter{
 
         @InjectView(R.id.wine_name) TextView wineName;
         @InjectView(R.id.wine_location) TextView wineLocation;
-        @InjectView(R.id.wine_picture) CircularImageView winePicture;
+        @InjectView(R.id.wine_picture) RoundedImageView winePicture;
 
         public ViewHolder(View view) {
             ButterKnife.inject(this, view);
+        }
+
+        private static void bind(Context ctx, List item, ViewHolder viewHolder) {
+            viewHolder.wineName.setText(item.getName());
+            viewHolder.wineLocation.setText(item.getAppellation().getRegion().getName());
+
+            String urlLabel = "";
+            if (!item.getLabels().isEmpty()) {
+                urlLabel = item.getLabels().get(0).getUrl();
+            }
+            Picasso.with(ctx).load(urlLabel)
+                    .error(R.drawable.ic_drawer)
+                    .into(viewHolder.winePicture);
         }
     }
 }
